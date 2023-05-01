@@ -1,0 +1,266 @@
+.div_box {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./image/star_sky.png);
+  width: 30%;
+  height: 300px;
+  margin-left: 35%;
+  margin-top: 5%;
+  background-size: cover;
+}
+
+.jedai_sword_back {
+  margin-left: 10%;
+  width: 10%;
+  height: 8px;
+  background-color: rgb(1, 1, 1);
+}
+
+.jedai_sword_back_2 {
+  margin-left: 8%;
+  width: 10%;
+  height: 8px;
+  background-color: rgb(1, 1, 1);
+}
+
+.jedai_sword_back_3 {
+  margin-left: 82%;
+  width: 10%;
+  height: 8px;
+  background-color: rgb(1, 1, 1);
+}
+
+.jedai_sword {
+  position: absolute;
+  margin-bottom: 5%;
+  width: 230px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  box-shadow: unset;
+  animation-name: jedi_sword;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes jedi_sword {
+  0% {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  50% {
+    transform: translateY(-40px);
+    box-shadow: 0 15px 20px rgba(255, 0, 0, 0.7);
+    background-color: #ff0000;
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: none;
+    background-color: rgb(209, 250, 252);
+  }
+}
+
+.jedai_1 {
+  margin-top: 5px;
+  width: 230px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  transform-origin: 60%;
+  animation-name: cross;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.jedai_2 {
+  margin-top: 20%;
+  width: 230px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  transform-origin: 50%;
+  animation-duration: 2s;
+  animation-name: cross_2;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+@keyframes cross {
+  0% {
+    transform: rotate(0deg);
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+  }
+  50% {
+    transform: rotate(45deg);
+    background-color: rgb(255, 247, 0);
+  }
+  100% {
+    transform: rotate(0deg);
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+  }
+}
+
+@keyframes cross_2 {
+  0% {
+    transform: rotate(0deg);
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+  }
+  50% {
+    transform: rotate(-45deg);
+    background-color: rgb(0, 0, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    transform: rotate(0deg);
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+  }
+}
+
+.balls {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.balls_1 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 140, 255);
+  border-radius: 50%;
+  filter: drop-shadow(5px 60px 5px rgb(186, 186, 186));
+  animation-name: ball_1;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes ball_1 {
+  0% {
+    transform: rotate(0deg);
+    background-color: rgb(0, 140, 255);
+    box-shadow: none;
+  }
+  50% {
+    transform: rotate(30deg) translateX(-50px);
+  }
+  100% {
+    transform: rotate(0deg);
+    background-color: rgb(0, 140, 255);
+    box-shadow: none;
+  }
+}
+
+.balls_2 {
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 140, 255),
+    rgb(0, 199, 234)
+  );
+  border-radius: 50%;
+  filter: drop-shadow(5px 60px 5px rgb(186, 186, 186));
+}
+
+.balls_3 {
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 199, 234),
+    rgb(29, 208, 244)
+  );
+  border-radius: 50%;
+  filter: drop-shadow(5px 60px 5px rgb(186, 186, 186));
+}
+
+.balls_4 {
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(29, 208, 244),
+    rgb(2, 234, 255)
+  );
+  border-radius: 50%;
+  filter: drop-shadow(5px 60px 5px rgb(186, 186, 186));
+}
+
+.balls_5 {
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(2, 234, 255),
+    rgb(2, 255, 230)
+  );
+  border-radius: 50%;
+  filter: drop-shadow(5px 60px 5px rgb(186, 186, 186));
+}
+
+.balls_6 {
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(2, 255, 230),
+    rgb(16, 247, 205)
+  );
+  border-radius: 50%;
+  filter: drop-shadow(5px 60px 5px rgb(186, 186, 186));
+}
+
+.balls_7 {
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(16, 247, 205),
+    rgb(0, 255, 166)
+  );
+  border-radius: 50%;
+  filter: drop-shadow(5px 60px 5px rgb(186, 186, 186));
+  animation-name: ball_7;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+}
+
+@keyframes ball_7 {
+  0% {
+    transform: rotate(0deg);
+    background-image: linear-gradient(
+      to right,
+      rgb(16, 247, 205),
+      rgb(0, 255, 166)
+    );
+    box-shadow: none;
+  }
+  50% {
+    transform: rotate(-30deg) translateX(50px);
+  }
+  100% {
+    transform: rotate(0deg);
+    background-image: linear-gradient(
+      to right,
+      rgb(16, 247, 205),
+      rgb(0, 255, 166)
+    );
+    box-shadow: none;
+  }
+}
