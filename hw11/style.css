@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.foto {
+  margin-left: 40%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.change_theme {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgb(0, 17, 255);
+  border: none;
+}
+
+.img-thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #262626;
+}
+
+.custom_button2 {
+  width: 33px;
+  height: 29px;
+  color: white;
+  background-color: rgb(0, 106, 255);
+  border-radius: 5px;
+  border: none;
+}
+
+.custom_button2:active {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.custom_button2::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.custom_button:active {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.custom_button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 97px;
+  height: 29px;
+  border-radius: 5px;
+  background-color: rgb(0, 106, 255);
+  border: none;
+}
+
+.mission:hover {
+  transform: scale(1.2);
+}
+
+.mission {
+  cursor: pointer;
+}
+
+p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.text_bio {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  width: 60%;
+}
+
+.link_bio {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #133768;
+  text-decoration: none;
+}
+
+.name_stories {
+  padding-top: 5%;
+  padding-left: 10%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 17px;
+}
+
+h5 {
+  padding-left: 10%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.posts_and_tagged {
+  width: 25px;
+  height: 25px;
+  padding-bottom: 15%;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.btn {
+  border: none;
+}
+
+.img-fluid {
+  padding-bottom: 10px;
+  width: 400px;
+  height: 290px;
+}
+
+.img-fluid_2 {
+  padding-bottom: 6px;
+  width: 400px;
+  height: 290px;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+body.dark-theme {
+  background-color: rgb(147, 147, 147);
+  color: white;
+}
+
+svg {
+  fill: black;
+}
+
+.dark-theme .icon_svg {
+  fill: white;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme a {
+  color: white;
+}
