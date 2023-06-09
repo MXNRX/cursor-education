@@ -1,0 +1,105 @@
+@import url("https://fonts.cdnfonts.com/css/kumar-one");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+body {
+  background-image: url(./img/tapki_img.png);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.header_name_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+}
+
+.btn_menu_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.btn_menu {
+  width: 100px;
+  height: 53px;
+  background: #f4f4f4;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+}
+
+.move_text_name {
+  font-family: "Kumar One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 220px;
+  color: #ffffff;
+}
+
+.moving-text-container {
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.moving-text {
+  animation: moveText 10.5s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.moving-text-container_2 {
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.moving-text_2 {
+  animation: moveText_2 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes moveText_2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.arrow_bot {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow_bot_bot {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  height: 130px;
+  cursor: pointer;
+}
